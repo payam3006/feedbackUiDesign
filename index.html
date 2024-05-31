@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedbackUiDesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div id="main" class="main">
+        <p style="font-weight: bold;">How satisfied are you with our customer support performance?</p>
+
+        <div class="choices">
+
+            <div class="choice" onclick="select(0)">
+                <div class="img" style="background-image: url(imojipng.parspng.com-11-300x300.webp);"></div>
+                <p>Unhappy</p>
+            </div>
+            <div class="choice" onclick="select(1)">
+                <div class="img" style="background-image: url(imojipng.parspng.com-20-300x300.webp);"></div>
+                <p>Neutral</p>
+            </div>
+            <div class="choice" onclick="select(2)">
+                <div class="img" style="background-image: url(imojipng.parspng.com-4-600x600.webp);"></div>
+                <p>Satisfied</p>
+            </div>
+
+
+
+        </div>
+        <div class="btn" onclick="showResult()">
+            Send Review
+        </div>
+
+    </div>
+
+    <div id="result" class="main hidden">
+        <p style="font-weight: bold;"><i class="fa fa-heart heart" style="color:red; font-size: 30px;"></i></p>
+
+        <p style="font-weight: bold;">Thank You!</p>
+        <p style="font-weight: bolder;">Feedback: Satisfied</p>
+        <p>We'll use your feedback to improve our customer support</p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

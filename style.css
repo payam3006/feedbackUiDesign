@@ -1,0 +1,104 @@
+:root {
+  /*use 100vh for mobile responsive
+COP!!!*/
+  --doc-height: 100%;
+}
+
+body {
+  /*use 100vh for mobile responsive
+COP!!!*/
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
+
+  /* How TO - Disable Text Selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(50, 130, 161);
+  /* color: white; */
+}
+/* prevent Refresh on touchDown */
+body {
+  overscroll-behavior: contain;
+}
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .main {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+} */
+
+/* //////////////////////////////////// */
+
+.main {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  padding: 20px 10px 30px 10px;
+  /* 
+  max-height: 90vh;
+
+  overflow: hidden;
+  transition: 1s;
+  background-size: cover;
+  background-position: center;
+  background-image: url("home.webp"); */
+}
+
+p {
+  text-align: center;
+  font-size: smaller;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  font-size: smaller;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.choices {
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+.choice {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70px;
+}
+.selected {
+  box-shadow: 0 0 10px gray;
+}
+.img {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 50px;
+  background-size: cover;
+}
+.hidden {
+  display: none;
+}
